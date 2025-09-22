@@ -32,3 +32,19 @@ cards.forEach((card, index) => {
   card.style.animationDelay = `${index * 0.2}s`;
   card.classList.add('fade-in');
 });
+
+const detailButtons = document.querySelectorAll('.details-btn');
+
+detailButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const extra = btn.nextElementSibling;
+    if(extra.style.display === 'none' || extra.style.display === ''){
+      extra.style.display = 'block';
+      btn.textContent = 'Hide Details';
+    } else {
+      extra.style.display = 'none';
+      btn.textContent = 'View Details';
+    }
+  });
+});
+

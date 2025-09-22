@@ -260,4 +260,53 @@ body.contact form button[type="submit"]:hover {
   100% { transform: scale(1); }
 }
 
+.extra-details {
+  transition: all 0.3s ease;
+}
+.extra-details:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Hero typing animation */
+.typed-text {
+  border-right: .1em solid #0b76ef;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* About image zooming */
+.about-image {
+  max-width: 250px;
+  border-radius: 8px;
+  animation: zoomInOut 5s ease-in-out infinite;
+}
+
+@keyframes zoomInOut {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+/* Skills section */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.skill {
+  background: var(--accent);
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Project extra details */
+.extra-details {
+  display: none;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
 
