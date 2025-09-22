@@ -12,7 +12,7 @@
 body {
   font-family: system-ui, Segoe UI, Segoe, Arial, sans-serif;
   line-height: 1.4;
-  background: #fff;
+  background: #e6e3e3;
 }
 
 /* Layout */
@@ -23,7 +23,7 @@ body {
 }
 
 .site-header {
-  background: #fff;
+  background: #e69d9d;
   border-bottom: 1px solid #eee;
   position: sticky;
   top: 0;
@@ -243,3 +243,21 @@ body.contact form button[type="submit"]:hover {
     padding: 4rem;
   }
 }
+
+/* About Page Image Continuous Zoom Animation */
+.about-image {
+  max-width: 200px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  animation: pulseZoom 4s ease-in-out infinite;
+  display: block;
+}
+
+/* Keyframes for zoom in/out */
+@keyframes pulseZoom {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+

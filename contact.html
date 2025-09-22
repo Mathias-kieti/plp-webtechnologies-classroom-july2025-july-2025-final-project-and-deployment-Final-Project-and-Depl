@@ -1,32 +1,52 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>About Me</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contact">
 
-  <body class="contact">
-    <section class="container">
-      <form id="contactForm" action="#" method="post" novalidate>
-        <label>
-          Name
-          <input name="name" required>
-        </label>
+  <!-- Header with navigation -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">MyPortfolio</a>
+      <button id="menuToggle" class="menu-toggle" aria-expanded="false">☰</button>
+      <nav id="mainNav" class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <label>
-          Email
-          <input name="email" type="email" required>
-        </label>
+  <!-- Contact Form Section -->
+  <section class="container" style="padding:2rem 0;">
+    <form id="contactForm" action="#" method="post" novalidate>
+      <label>
+        Name
+        <input name="name" required>
+      </label>
+      <label>
+        Email
+        <input name="email" type="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
-        <label>
-          Message
-          <textarea name="message" required></textarea>
-        </label>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Mathias_Kieti</p>
+    </div>
+  </footer>
 
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </body>
+  <script src="js/main.js"></script>
+</body>
 </html>
