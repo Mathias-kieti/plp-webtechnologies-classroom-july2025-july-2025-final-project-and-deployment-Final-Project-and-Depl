@@ -310,3 +310,36 @@ body.contact form button[type="submit"]:hover {
   color: #555;
 }
 
+.site-footer {
+  background: #f8f9fa; /* light gray background */
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.site-footer .container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.site-footer p {
+  margin: 0 0 10px;
+}
+
+.site-footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* spacing between icons */
+}
+
+.site-footer .social-icons a img {
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.site-footer .social-icons a:hover img {
+  transform: scale(1.2); /* zoom effect */
+  opacity: 0.8;          /* slight fade */
+}
+
